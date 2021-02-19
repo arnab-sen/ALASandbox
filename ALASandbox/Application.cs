@@ -11,9 +11,7 @@ namespace ALASandbox
 {
     class Application
     {
-        
         private MainWindow _mainWindow;
-
 
         [STAThread]
         public static void Main(string[] args)
@@ -48,8 +46,6 @@ namespace ALASandbox
             mainWindow.WireTo(UIConfig_mainWindowContents, "iuiStructure"); /* {"SourceType":"MainWindow","SourceIsReference":false,"DestinationType":"UIConfig","DestinationIsReference":false,"Description":"","SourceGenerics":[],"DestinationGenerics":[]} */
             UIConfig_mainWindowContents.WireTo(mainWindowContents, "child"); /* {"SourceType":"UIConfig","SourceIsReference":false,"DestinationType":"Vertical","DestinationIsReference":false,"Description":"","SourceGenerics":[],"DestinationGenerics":[]} */
             // END AUTO-GENERATED WIRING FOR MainDiagram
-
-
 
 
             _mainWindow = mainWindow;
